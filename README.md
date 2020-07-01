@@ -5,6 +5,8 @@ It tries to be a little bit secure by doing the following:
 
 * Running each render as a separate container instance.
 
+* LaTeX runs as a regular user inside of the container (Dockerfile).
+
 * Limiting CPU, memory and time taken to render. (in docker invocation and init.sh)
 
 * Detecting dodgy LaTeX commands that can be used to execute system commands. (in init.sh)
