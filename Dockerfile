@@ -2,7 +2,7 @@ FROM debian:latest
 RUN apt-get update
 RUN apt-get install -y texlive-latex-extra
 RUN apt-get install -y python
-RUN apt-get install -y imagemagick
+RUN apt-get install -y graphicsmagick
 
 RUN useradd -ms /bin/bash runtime
 ADD formula.tex /home/runtime/formula.tex
